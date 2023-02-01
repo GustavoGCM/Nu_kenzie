@@ -1,0 +1,63 @@
+.index-black{
+    background-color: var(--grey-4);
+    overflow-x: none;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    animation: appear 1s forwards;
+}
+
+.index-black > img{
+    max-width: 90%;
+    margin: 0 20px;
+}
+
+.indexPage{
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    padding: 40px 20px;
+    color: var(--grey-2);
+}
+
+.indexPage > img{
+    max-height: 21px;
+    max-width: 123px;
+}
+
+.indexPage > h1{
+    font-size: var(--title-1);
+    font-weight: 600;
+}
+
+.indexPage > p,button{
+    font-size: var(--headline);
+}
+
+.indexPage > button{
+    padding: 13px;
+    border-radius: var(--border-default);
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: var(--grey-1);
+    cursor: pointer;
+}
+
+@media (min-width:769px) {
+    .index-black{
+        flex-direction: row;
+        height: 100vh;
+        gap: 48px;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10%;
+    }
+
+    .index-black > header{
+        max-width: 350px;
+    }
+
+    .index-black > img{
+        max-height: 85%;
+    }
+}

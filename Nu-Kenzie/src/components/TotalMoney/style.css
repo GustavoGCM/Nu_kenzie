@@ -1,0 +1,25 @@
+footer {
+  padding: 20px 24px;
+  border: 1px solid var(--grey-2);
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--title-3);
+  font-weight: 600;
+  line-height: 150%;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+footer > div > span{
+    font-size: var(--body);
+    font-weight: 400;
+}
+
+footer > p {
+    color: var(--color-primary);
+}
