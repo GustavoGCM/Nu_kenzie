@@ -5,8 +5,6 @@ function TotalMoney({ listTransactions }) {
    return acumulador + valorAtual.value
   },0);
 
-  console.log(valorTotal);
-
   return (
     <>
       <footer>
