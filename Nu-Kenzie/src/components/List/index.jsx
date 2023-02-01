@@ -12,7 +12,7 @@ function List({ listTransactions, setListTransactions }) {
   
   return (
     <>
-      {listTransactions.map((list) => {
+      {listTransactions.length > 0 ? listTransactions.map((list) => {
           return (
             <Cards
               list={list}
@@ -23,7 +23,7 @@ function List({ listTransactions, setListTransactions }) {
               removeItem={removeItem}
             />  
           );
-        })}
+        }): <h1>Você ainda não possui nenhum lançamento</h1>}
     </>
   );
 }

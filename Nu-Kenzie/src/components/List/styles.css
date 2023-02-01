@@ -3,3 +3,10 @@ ul{
     flex-direction: column;
     gap: 19px;
 }
+
+ul > h1{
+    font-size: var(--title-2);
+    color: var(--grey-4);
+    font-weight: 600;
+    margin: 40px 20px;
+}
