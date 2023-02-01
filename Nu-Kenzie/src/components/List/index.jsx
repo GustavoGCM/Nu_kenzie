@@ -8,7 +8,6 @@ function List({ listTransactions, setListTransactions }) {
     setListTransactions(
       listTransactions.filter(item => item != finded)
     );
-    console.log(index);
   }
   
   return (

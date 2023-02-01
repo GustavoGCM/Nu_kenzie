@@ -17,7 +17,6 @@ function Forms({ listTransactions, setListTransactions }) {
     }
 
     setListTransactions([...listTransactions, data])
-    console.log(listTransactions);
   }
 
   return (
