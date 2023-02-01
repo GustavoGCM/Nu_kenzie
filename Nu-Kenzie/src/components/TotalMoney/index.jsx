@@ -1,9 +1,11 @@
-import './style.css'
+import "./style.css";
 
 function TotalMoney({ listTransactions }) {
   const valorTotal = listTransactions.reduce((acumulador, valorAtual) => {
-   return acumulador + valorAtual.value
-  },0);
+    return valorAtual.type == "entrada"
+      ? acumulador + valorAtual.value
+      : acumulador - valorAtual.value;
+  }, 0);
 
   return (
     <>
@@ -18,4 +20,4 @@ function TotalMoney({ listTransactions }) {
   );
 }
 
-export default TotalMoney
+export default TotalMoney;
