@@ -1,33 +1,8 @@
-.homePage{
-  position: fixed;
-  right: 0;
-  background-color: white;
-  left: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 26px 40px;
-  z-index: 1;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  animation: appear 2s forwards;
-}
-
-.homePage > img {
-  max-height: 21px;
-}
-
-.homePage > button {
-  padding: 10.5px 15px;
-  background-color: var(--grey-2);
-  border-radius: var(--border-default);
-  border: 1px solid var(--grey-2);
-  color: var(--grey-4);
-  cursor: pointer;
-}
-
-.homePage > button:hover{
-  background-color: var(--color-primary);
-  color: var(--grey-1);
+.app__container{
+  max-width: 1600px;
+  height: 100vh;
+  position: relative;
+  margin: 0 auto;
 }
 
 main{

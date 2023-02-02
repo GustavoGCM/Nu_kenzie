@@ -2,6 +2,7 @@ ul{
     display: flex;
     flex-direction: column;
     gap: 19px;
+    margin-top: 29px;
 }
 
 ul > h1{

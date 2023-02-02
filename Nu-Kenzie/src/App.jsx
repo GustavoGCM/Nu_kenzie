@@ -9,6 +9,7 @@ import "./index.css";
 import Forms from "./components/Form";
 import List from "./components/List";
 import Cards from "./components/Cards";
+import Header from "./components/Header";
 import TotalMoney from "./components/TotalMoney";
 
 function App() {
@@ -20,10 +21,8 @@ function App() {
     page == "index" ? setPage("home") : setPage("index");
   }
 
-  
-  
   return (
-    <div className="App">
+    <div className="app__container">
       {page == "index" ? (
         <div className="index-black">
           <header className="indexPage">
@@ -37,10 +36,7 @@ function App() {
         </div>
       ) : (
         <>
-          <header className="homePage">
-            <img src={nuKenzieLogo} alt="logoKenzie" />
-            <button onClick={changePage}>Início</button>
-          </header>
+          <Header logo={nuKenzieLogo} changePage={changePage} />
 
           <main>
             <section className="forms">
@@ -64,7 +60,6 @@ function App() {
       )}
     </div>
   );
-  
 }
 
 export default App;
